@@ -28,7 +28,7 @@ for t in range(30000):
         best = acy
         with open("studentmodel.pickle", "wb") as f:
             pickle.dump(linear, f)  # Saves Data as Pickle
-    if acy > .97:
+    if acy > .975:
         break
 
 # Create Pickle File
